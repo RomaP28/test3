@@ -1,22 +1,19 @@
-body .header .nav .nav__logo, body .footer .footer__logo {
+body .header .container .nav .nav__logo, body .footer .container .footer__logo {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.05em;
-  text-decoration: none; }
-  body .header .nav .nav__logo a:visited, body .footer .footer__logo a:visited {
+  letter-spacing: 0.05em; }
+  body .header .container .nav .nav__logo a:visited, body .footer .container .footer__logo a:visited {
     color: #000; }
-  body .header .nav .nav__logo a:active, body .footer .footer__logo a:active {
+  body .header .container .nav .nav__logo a:active, body .footer .container .footer__logo a:active {
     color: #000; }
-  body .header .nav .nav__logo .logo--img, body .footer .footer__logo .logo--img {
+  body .header .container .nav .nav__logo .logo--img, body .footer .container .footer__logo .logo--img {
     margin-right: 10px;
     height: 22px;
     width: 26px;
     vertical-align: text-bottom; }
 
-body .header .header__form .header__container .search--btn, body .section__articles .articles--btn, body .section__subscribe .subscribe__form .subscribe__btn, body .section__joinUs .joinUs__container .joinUs__form .form__header .joinUs__btn {
-  cursor: pointer;
+body .header .container .header__form .form__container .form__search .search--btn, body .section__articles .container .articles--btn, body .section__subscribe .container .subscribe__form .subscribe__btn, body .section__joinUs .container .joinUs__container .joinUs__form .form__header .joinUs__btn {
   color: #FFFFFF;
   font-size: 15px;
   width: 150px;
@@ -25,10 +22,10 @@ body .header .header__form .header__container .search--btn, body .section__artic
   border: 1px solid #794DEF;
   background: #794DEF;
   box-shadow: 0px 0px 15px rgba(151, 116, 244, 0.5); }
-  body .header .header__form .header__container .search--btn .btn--symbol, body .section__articles .articles--btn .btn--symbol, body .section__subscribe .subscribe__form .subscribe__btn .btn--symbol, body .section__joinUs .joinUs__container .joinUs__form .form__header .joinUs__btn .btn--symbol {
+  body .header .container .header__form .form__container .form__search .search--btn .btn--symbol, body .section__articles .container .articles--btn .btn--symbol, body .section__subscribe .container .subscribe__form .subscribe__btn .btn--symbol, body .section__joinUs .container .joinUs__container .joinUs__form .form__header .joinUs__btn .btn--symbol {
     margin-left: 12px; }
 
-body .header .header__form .header__container .search--input, body .section__subscribe .subscribe__form .subscribe__input {
+body .header .container .header__form .form__container .form__search .search--input, body .section__subscribe .container .subscribe__form .subscribe__input {
   width: 38%;
   height: 60px;
   background: #FFFFFF;
@@ -39,7 +36,7 @@ body .header .header__form .header__container .search--input, body .section__sub
   font-size: 15px;
   line-height: 18px;
   padding-left: 10px; }
-  body .header .header__form .header__container .search--input::placeholder, body .section__subscribe .subscribe__form .subscribe__input::placeholder {
+  body .header .container .header__form .form__container .form__search .search--input::placeholder, body .section__subscribe .container .subscribe__form .subscribe__input::placeholder {
     color: #D0D0D0;
     font-size: 15px; }
 
@@ -47,83 +44,83 @@ body {
   font-family: 'Work Sans', sans-serif;
   background-color: #FFFFFF; }
   body .header {
-    width: 100%;
     height: 100vh;
     background-image: url(../img/header/businessman-working-on-laptop.png), url(../img/header/ellipse.png);
     background-position: left bottom, right center;
     background-repeat: no-repeat;
     position: relative; }
-    body .header .nav {
-      margin: 0 auto;
-      max-width: 1170px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 100px;
-      z-index: 100; }
-      body .header .nav .nav__links {
+    body .header .container {
+      margin: 0 auto; }
+      body .header .container .nav {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        list-style: none; }
-        body .header .nav .nav__links .nav__item {
-          cursor: pointer;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 18px;
-          margin-left: 32px; }
-          body .header .nav .nav__links .nav__item .nav__link:link, body .header .nav .nav__links .nav__item .nav__link:visited {
-            color: inherit;
-            text-decoration: none;
-            display: block;
-            transition: all 0.3s; }
-          body .header .nav .nav__links .nav__item .nav__link--btn:link, body .header .nav .nav__links .nav__item .nav__link--btn:visited {
-            padding: 0.8rem 2.5rem;
-            border-radius: 3rem;
-            border: 1px solid #026EDE;
-            color: #026EDE; }
-          body .header .nav .nav__links .nav__item .nav__link--btn:hover, body .header .nav .nav__links .nav__item .nav__link--btn:active {
-            color: inherit;
-            background-color: #026EDE;
-            color: white; }
-    body .header .header__form {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 80%;
-      padding: 30px 0;
-      top: 38%;
-      left: 50%;
-      background: rgba(233, 233, 233, 0.6);
-      backdrop-filter: blur(4px);
-      border-radius: 20px;
-      transform: translateX(-50%); }
-      body .header .header__form h2 {
-        text-align: center;
-        font-weight: 700;
-        font-size: 50px; }
-      body .header .header__form .header__container {
-        width: 70%;
-        margin: 36px auto; }
-        body .header .header__form .header__container .header__form--tags {
-          width: 76%;
+        width: 100%;
+        height: 100px;
+        z-index: 100; }
+        body .header .container .nav .nav__links {
           display: flex;
-          flex-wrap: wrap; }
-          body .header .header__form .header__container .header__form--tags .tag {
-            margin: 16px 19px 0 0;
-            vertical-align: middle;
-            color: white;
-            font-size: 15px;
+          align-items: center;
+          list-style: none; }
+          body .header .container .nav .nav__links .nav__item {
             cursor: pointer;
-            padding: 6px 8px;
-            height: 30px;
-            background: rgba(121, 77, 239, 0.2);
-            border: 1px solid #FFFFFF;
-            border-radius: 50px; }
-            body .header .header__form .header__container .header__form--tags .tag .tag--search {
-              margin-right: 6px; }
+            margin-left: 32px; }
+            body .header .container .nav .nav__links .nav__item .nav__link {
+              font-size: 15px; }
+              body .header .container .nav .nav__links .nav__item .nav__link:link, body .header .container .nav .nav__links .nav__item .nav__link:visited {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                transition: all 0.3s; }
+            body .header .container .nav .nav__links .nav__item .nav__link--btn:link, body .header .container .nav .nav__links .nav__item .nav__link--btn:visited {
+              padding: 14px 30px;
+              border-radius: 3rem;
+              border: 1px solid #026EDE;
+              color: #026EDE; }
+            body .header .container .nav .nav__links .nav__item .nav__link--btn:hover, body .header .container .nav .nav__links .nav__item .nav__link--btn:active {
+              color: inherit;
+              background-color: #026EDE;
+              color: white; }
+      body .header .container .header__form {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        padding: 30px 0;
+        top: 38%;
+        left: 50%;
+        background: rgba(233, 233, 233, 0.6);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        transform: translateX(-50%); }
+        body .header .container .header__form .form__title {
+          text-align: center;
+          font-weight: 700;
+          font-size: 50px; }
+        body .header .container .header__form .form__container {
+          width: 70%;
+          margin: 36px auto; }
+          body .header .container .header__form .form__container .form__search {
+            display: flex; }
+          body .header .container .header__form .form__container .header__form--tags {
+            width: 85%;
+            display: flex;
+            flex-wrap: wrap; }
+            body .header .container .header__form .form__container .header__form--tags .tag {
+              margin: 16px 19px 0 0;
+              vertical-align: middle;
+              color: white;
+              font-size: 15px;
+              cursor: pointer;
+              padding: 6px 8px;
+              height: 30px;
+              background: rgba(121, 77, 239, 0.2);
+              border: 1px solid #FFFFFF;
+              border-radius: 50px; }
+              body .header .container .header__form .form__container .header__form--tags .tag .tag--search {
+                margin-right: 6px; }
   body .section {
     width: 100%;
     margin-top: 100px; }
@@ -135,161 +132,169 @@ body {
       font-size: 25px;
       font-weight: 700; }
   body .section__sponsors {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #026EDE;
-    height: 339px; }
-    body .section__sponsors h2 {
-      margin: 0;
-      color: white;
-      font-size: 25px;
-      font-weight: 700; }
-    body .section__sponsors .section__sponsors--content {
+    background-color: #026EDE; }
+    body .section__sponsors .container {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
       display: flex;
-      justify-content: space-between;
-      width: 1170px; }
-  body .section__jobs .section__jobs--content {
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    body .section__jobs .section__jobs--content .jobs--item {
-      margin-top: 24px;
-      padding: 17px 24px 26px 16px;
-      width: 45%;
-      background-color: #FFF;
-      box-shadow: 0px 0px 20px rgba(2, 126, 232, 0.15);
-      border: 1px solid rgba(2, 126, 232, 0.15);
-      border-radius: 20px; }
-      body .section__jobs .section__jobs--content .jobs--item:hover {
-        border: 1px solid #026EDE;
-        box-shadow: none; }
-      body .section__jobs .section__jobs--content .jobs--item .item__header {
-        display: flex;
-        justify-content: space-between; }
-        body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--img {
-          text-align: center;
-          margin: auto;
-          width: 20%; }
-        body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container {
-          width: 80%;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap; }
-          body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title {
-            width: 76%;
-            text-align: center; }
-            body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title h3 {
-              font-weight: 700;
-              font-size: 18px; }
-            body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title p {
-              font-size: 18px; }
-          body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured {
-            width: 90px;
-            display: flex;
-            justify-content: space-between; }
-            body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured p {
-              color: white;
-              font-size: 12px;
-              background-color: #02D4DE;
-              border-radius: 20px;
-              padding: 4px;
-              display: inline-block;
-              height: 20px; }
-            body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star {
-              cursor: pointer;
-              margin-top: 1px;
-              width: 16px;
-              height: 16px;
-              background-image: url(../img/jobs/star-white.png); }
-              body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star:hover {
-                background-image: url(../img/jobs/star.png); }
-          body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--details {
-            margin-top: 5px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            color: #BDBDBD; }
-            body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--details .detail__img {
-              margin-right: 5px;
-              vertical-align: text-bottom; }
-      body .section__jobs .section__jobs--content .jobs--item .item__body {
-        text-align: center;
-        margin-top: 23px;
-        font-weight: 400;
-        font-size: 15px; }
-    body .section__jobs .section__jobs--content .jobs--viewAll {
-      color: white;
-      display: flex;
-      justify-content: center;
       flex-direction: column;
       align-items: center;
-      background-color: #026EDE; }
-      body .section__jobs .section__jobs--content .jobs--viewAll p {
-        cursor: pointer;
-        font-size: 15px; }
-  body .section__articles {
+      justify-content: space-evenly;
+      padding-top: 100px; }
+      body .section__sponsors .container h2 {
+        color: white;
+        font-size: 25px;
+        font-weight: 700; }
+      body .section__sponsors .container .section__sponsors--content {
+        display: flex;
+        justify-content: space-between;
+        width: 1170px;
+        margin: 60px 0 100px 0; }
+        body .section__sponsors .container .section__sponsors--content div {
+          width: 25%; }
+  body .section__jobs .container {
+    width: 1170px;
+    margin: 0 auto; }
+    body .section__jobs .container .section__jobs--content {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      body .section__jobs .container .section__jobs--content .jobs--item {
+        margin-top: 24px;
+        padding: 17px 24px 26px 16px;
+        width: 45%;
+        background-color: #FFF;
+        box-shadow: 0px 0px 20px rgba(2, 126, 232, 0.15);
+        border: 1px solid rgba(2, 126, 232, 0.15);
+        border-radius: 20px; }
+        body .section__jobs .container .section__jobs--content .jobs--item:hover {
+          border: 1px solid #026EDE;
+          box-shadow: none; }
+        body .section__jobs .container .section__jobs--content .jobs--item .item__header {
+          display: flex;
+          justify-content: space-between; }
+          body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--img {
+            text-align: center;
+            margin: auto;
+            width: 20%; }
+          body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; }
+            body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title {
+              width: 76%;
+              text-align: center; }
+              body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title h3 {
+                font-weight: 700;
+                font-size: 18px; }
+              body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--title p {
+                font-size: 18px; }
+            body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured {
+              width: auto;
+              display: flex;
+              justify-content: space-between; }
+              body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured p {
+                color: white;
+                font-size: 12px;
+                background-color: #02D4DE;
+                border-radius: 20px;
+                padding: 4px;
+                display: inline-block;
+                height: 20px; }
+              body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star {
+                cursor: pointer;
+                margin-top: 1px;
+                width: 16px;
+                height: 16px;
+                background-image: url(../img/jobs/star-white.png); }
+                body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star:hover {
+                  background-image: url(../img/jobs/star.png); }
+            body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--details {
+              margin-top: 5px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              color: #BDBDBD; }
+              body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--details .detail__img {
+                margin-right: 5px;
+                vertical-align: text-bottom; }
+        body .section__jobs .container .section__jobs--content .jobs--item .item__body {
+          text-align: center;
+          margin-top: 23px;
+          font-weight: 400;
+          font-size: 15px; }
+      body .section__jobs .container .section__jobs--content .jobs--viewAll {
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #026EDE; }
+        body .section__jobs .container .section__jobs--content .jobs--viewAll p {
+          cursor: pointer;
+          font-size: 15px; }
+  body .section__articles .container {
     width: 1170px;
     margin: 0 auto;
     text-align: center; }
-    body .section__articles .section__articles--content {
+    body .section__articles .container .section__articles--content {
       display: flex;
       justify-content: space-between; }
-      body .section__articles .section__articles--content .article {
+      body .section__articles .container .section__articles--content .article {
         width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center; }
-        body .section__articles .section__articles--content .article .article__img {
+        body .section__articles .container .section__articles--content .article .article__img {
           width: 100%;
           border-radius: 15px; }
-        body .section__articles .section__articles--content .article .article--title {
+        body .section__articles .container .section__articles--content .article .article--title {
           font-weight: 700;
           font-size: 18px;
           margin: 37px 0 25px;
           width: 150px;
           text-align: center; }
-        body .section__articles .section__articles--content .article p {
+        body .section__articles .container .section__articles--content .article p {
           height: 25px; }
-        body .section__articles .section__articles--content .article .article__link {
+        body .section__articles .container .section__articles--content .article .article__link {
           text-decoration: none;
           cursor: pointer;
           color: #026EDE;
           text-align: center; }
-          body .section__articles .section__articles--content .article .article__link .section__articles--arrow {
+          body .section__articles .container .section__articles--content .article .article__link .section__articles--arrow {
             margin-left: 10px; }
-    body .section__articles .articles--btn {
+    body .section__articles .container .articles--btn {
       margin-top: 60px; }
-  body .section__allJobs {
-    width: 1170px;
+  body .section__allJobs .container {
+    max-width: 1170px;
     margin: 0 auto;
     text-align: center; }
-    body .section__allJobs .allJobs__container {
+    body .section__allJobs .container .allJobs__container {
       margin: 0 auto; }
-      body .section__allJobs .allJobs__container .allJobs__tab-container {
+      body .section__allJobs .container .allJobs__container .allJobs__tab-container {
         width: 170px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between; }
-        body .section__allJobs .allJobs__container .allJobs__tab-container .allJobs__tab {
+        body .section__allJobs .container .allJobs__container .allJobs__tab-container .allJobs__tab {
           cursor: pointer;
           font-weight: 400;
           font-size: 15px;
           height: 26px; }
-        body .section__allJobs .allJobs__container .allJobs__tab-container .tab--active {
+        body .section__allJobs .container .allJobs__container .allJobs__tab-container .tab--active {
           width: 65px;
           border-bottom: 1px solid #026EDE; }
-      body .section__allJobs .allJobs__container .allJobs__content {
+      body .section__allJobs .container .allJobs__container .allJobs__content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 60px; }
-        body .section__allJobs .allJobs__container .allJobs__content .allJobs__item {
+        body .section__allJobs .container .allJobs__container .allJobs__content .allJobs__item {
           flex: 20%;
           margin-left: 50px;
           margin-bottom: 25px;
@@ -303,134 +308,139 @@ body {
           background: #FFFFFF;
           box-shadow: 0px 0px 20px rgba(2, 126, 232, 0.15);
           border-radius: 20px; }
-          body .section__allJobs .allJobs__container .allJobs__content .allJobs__item .item__title {
+          body .section__allJobs .container .allJobs__container .allJobs__content .allJobs__item .item__title {
             font-weight: 700;
             font-size: 18px;
             display: flex;
             align-items: center;
             justify-content: center; }
-            body .section__allJobs .allJobs__container .allJobs__content .allJobs__item .item__title .section__articles--arrow {
+            body .section__allJobs .container .allJobs__container .allJobs__content .allJobs__item .item__title .section__articles--arrow {
               margin-left: 10px; }
-          body .section__allJobs .allJobs__container .allJobs__content .allJobs__item p {
+          body .section__allJobs .container .allJobs__container .allJobs__content .allJobs__item p {
             margin-top: 12px;
             font-weight: 400;
             font-size: 15px;
             line-height: 18px; }
-        body .section__allJobs .allJobs__container .allJobs__content .allJobs__item--viewall {
+        body .section__allJobs .container .allJobs__container .allJobs__content .allJobs__item--viewall {
           color: white;
           background-color: #026EDE; }
   body .section__subscribe {
-    width: 100%;
-    height: 300px;
     background-color: rgba(121, 77, 239, 0.2);
     background-image: url(../img/subscribe/ellipse.png), url(../img/subscribe/subscribe.png);
     background-position: left center, right bottom;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    body .section__subscribe .subscribe__form {
-      width: 1170px;
-      height: 157px;
-      left: 215px;
-      top: 72px;
-      background: rgba(233, 233, 233, 0.6);
-      border-radius: 20px;
+    background-repeat: no-repeat; }
+    body .section__subscribe .container {
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
-      body .section__subscribe .subscribe__form .subscribe__title {
-        color: #026EDE;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px; }
-  body .section__joinUs .joinUs__container {
-    width: 1170px;
-    margin: 0 auto;
-    height: 400px;
-    display: flex; }
-    body .section__joinUs .joinUs__container .joinUs__form {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center; }
-      body .section__joinUs .joinUs__container .joinUs__form .form__header {
-        width: 404px; }
-        body .section__joinUs .joinUs__container .joinUs__form .form__header .header__title {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 21px; }
-        body .section__joinUs .joinUs__container .joinUs__form .form__header .joinUs__btn {
-          margin-top: 20px;
-          width: 240px; }
-      body .section__joinUs .joinUs__container .joinUs__form .form__footer .footer__question {
-        color: #02D4DE;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 18px; }
-      body .section__joinUs .joinUs__container .joinUs__form .form__footer .footer__subtitle {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        margin-top: 9px;
-        height: 30px;
-        border-bottom: 1px solid #026EDE; }
-    body .section__joinUs .joinUs__container .joinUs__content {
-      width: 50%;
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       align-items: center; }
-      body .section__joinUs .joinUs__container .joinUs__content .joinUs__item {
-        flex: 30%;
+      body .section__subscribe .container .subscribe__form {
+        width: 1170px;
+        height: 157px;
+        left: 215px;
+        top: 72px;
+        background: rgba(233, 233, 233, 0.6);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        body .section__subscribe .container .subscribe__form .subscribe__title {
+          color: #026EDE;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center; }
+  body .section__joinUs .container {
+    width: 1170px;
+    margin: 0 auto; }
+    body .section__joinUs .container .joinUs__container {
+      width: 100%;
+      height: 400px;
+      display: flex; }
+      body .section__joinUs .container .joinUs__container .joinUs__form {
+        width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
-        width: 74px;
-        height: 74px; }
-        body .section__joinUs .joinUs__container .joinUs__content .joinUs__item .item__img {
-          width: 50px;
-          height: 50px;
-          border: 1px solid white;
-          border-radius: 10px;
-          box-shadow: 0px 0px 20px rgba(2, 126, 232, 0.15);
-          margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center; }
+        body .section__joinUs .container .joinUs__container .joinUs__form .form__header {
+          width: 404px; }
+          body .section__joinUs .container .joinUs__container .joinUs__form .form__header .header__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px; }
+          body .section__joinUs .container .joinUs__container .joinUs__form .form__header .joinUs__btn {
+            margin-top: 20px;
+            width: 240px; }
+        body .section__joinUs .container .joinUs__container .joinUs__form .form__footer .footer__question {
+          color: #02D4DE;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px; }
+        body .section__joinUs .container .joinUs__container .joinUs__form .form__footer .footer__subtitle {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          margin-top: 9px;
+          height: 30px;
+          border-bottom: 1px solid #026EDE; }
+      body .section__joinUs .container .joinUs__container .joinUs__content {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        body .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item {
+          flex: 30%;
           display: flex;
-          align-items: center;
-          justify-content: center; }
-        body .section__joinUs .joinUs__container .joinUs__content .joinUs__item p {
-          font-size: 12px;
-          line-height: 14px; }
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-between;
+          width: 74px;
+          height: 74px; }
+          body .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item .item__img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(2, 126, 232, 0.15);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          body .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item p {
+            font-size: 12px;
+            line-height: 14px; }
   body .section__download {
     background-color: #026EDE;
     padding: 100px 0; }
-    body .section__download .download__container {
+    body .section__download .container {
       width: 1170px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between; }
-      body .section__download .download__container .container__column {
+      body .section__download .container .container__column {
         text-align: center;
         color: #FFF; }
-        body .section__download .download__container .container__column h5 {
+        body .section__download .container .container__column h5 {
           font-weight: 500;
           font-size: 18px;
           margin-bottom: 25px; }
-        body .section__download .download__container .container__column p {
+        body .section__download .container .container__column p {
           font-weight: 400;
           font-size: 15px;
           margin-bottom: 15px; }
-          body .section__download .download__container .container__column p a {
+          body .section__download .container .container__column p a {
             color: #fff; }
-        body .section__download .download__container .container__column .column__subtitle {
+        body .section__download .container .container__column .column__subtitle {
           display: inline-block;
           height: 20px;
           border-bottom: 1px solid white; }
-  body .footer {
+  body .footer .container {
     width: 1170px;
     margin: 0 auto;
     padding: 38px 0;
@@ -438,19 +448,89 @@ body {
     justify-content: space-between;
     align-items: center;
     vertical-align: middle; }
-    body .footer .footer__follow {
+    body .footer .container .footer__follow {
       display: flex;
       align-items: center; }
-      body .footer .footer__follow .follow__link,
-      body .footer .footer__follow p {
+      body .footer .container .footer__follow .follow__link,
+      body .footer .container .footer__follow p {
         margin-right: 10px; }
-    body .footer .footer__nav {
+    body .footer .container .footer__nav {
       list-style: none;
       display: flex; }
-      body .footer .footer__nav .footer__item .footer__link {
+      body .footer .container .footer__nav .footer__item .footer__link {
         margin-right: 33px;
         vertical-align: middle;
         font-weight: 400;
         font-size: 15px;
         color: black;
         text-decoration: underline; }
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1120px !important; } }
+@media (max-width: 1219px) {
+  .container {
+    max-width: 970px !important; }
+    .container .header__form {
+      padding: 30px 0 !important; }
+      .container .header__form .form__title {
+        font-size: 40px !important; }
+      .container .header__form .form__container {
+        width: 90% !important;
+        margin: 10px auto !important; }
+        .container .header__form .form__container .search--input,
+        .container .header__form .form__container .search--btn {
+          height: 50px !important; }
+        .container .header__form .form__container .header__form--tags {
+          width: 100% !important;
+          justify-content: center !important; }
+
+  .section__sponsors--content {
+    width: 80% !important;
+    flex-wrap: wrap !important;
+    align-items: center !important; }
+    .section__sponsors--content div {
+      margin: 15px; } }
+@media (max-width: 992px) {
+  .container {
+    max-width: 780px !important;
+    margin: 0 auto !important; }
+    .container .nav__item {
+      margin-left: 5px; }
+      .container .nav__item .nav__link {
+        font-size: 13px !important; }
+      .container .nav__item .nav__link--btn {
+        padding: 7px 6px !important; }
+    .container .header__form {
+      padding: 30px 0 !important; }
+      .container .header__form .form__title {
+        font-size: 30px !important; }
+      .container .header__form .form__container {
+        width: 90% !important;
+        margin: 10px auto !important; }
+        .container .header__form .form__container .form__container .form__search .search--input {
+          width: 40% !important; }
+          .container .header__form .form__container .form__container .form__search .search--input::placeholder {
+            font-size: 12px !important; }
+        .container .header__form .form__container .form__container .form__search .search--btn {
+          width: 15% !important; }
+    .container .section__sponsors--content {
+      width: 80% !important;
+      flex-wrap: wrap !important;
+      align-items: center !important; }
+    .container .section__jobs--content .jobs--item {
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 17px 24px 26px 16px;
+      width: 90% !important; }
+
+  .section__jobs .section__jobs--content .jobs--item {
+    margin-top: 24px;
+    padding: 17px 24px 26px 16px;
+    width: 90% !important; } }
+@media (max-width: 767px) {
+  .header .container {
+    width: 100% !important;
+    height: 100% !important; }
+    .header .container .nav {
+      justify-content: center !important; } }
