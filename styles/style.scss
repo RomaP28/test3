@@ -238,7 +238,14 @@ body {
         margin: 60px 0 100px 0;
 
         div {
-          width: 25%;
+          width: 15%;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+
         }
       }
 
@@ -278,7 +285,7 @@ body {
             .item__header--img {
               text-align: center;
               margin: auto;
-              width: 20%;
+              width: auto;
             }
 
             .item__header--container {
@@ -772,11 +779,11 @@ body {
       margin-left: 5px;
 
       .nav__link {
-        font-size: 13px !important;
+        font-size: 16px !important;
       }
 
       .nav__link--btn {
-        padding: 7px 6px !important;
+        padding: 10px 15px !important;
       }
     }
 
@@ -785,7 +792,7 @@ body {
       padding: 30px 0 !important;
 
       .form__title {
-        font-size: 30px !important;
+        font-size: 25px !important;
       }
 
       .form__container {
@@ -863,7 +870,7 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 360px !important;
+    max-width: 390px !important;
   }
 
   .nav {
@@ -920,11 +927,18 @@ body {
     .container {
 
       .section__sponsors--content {
-        justify-content: center !important; // a
+        justify-content: center !important; // 
+        align-items: center !important; // 
         margin: 60px auto !important;
 
         div {
-          width: 50% !important;
+          width: auto !important;
+          height: 60px !important;
+
+          img {
+            width: auto !important;
+            height: 100% !important;
+          }
         }
       }
     }
@@ -932,8 +946,6 @@ body {
 
   .section__jobs {
     .container {
-      // max-width: 390px !important;
-
       .jobs--item {
         width: 90%;
 
@@ -950,6 +962,15 @@ body {
             .item__header--title {
               width: 100% !important;
               margin-bottom: 10px !important;
+            }
+
+            .item__header--details {
+              display: block !important;
+
+              p {
+                margin-top: 10px;
+                text-align: center;
+              }
             }
           }
 
@@ -979,6 +1000,14 @@ body {
       .allJobs__item {
         flex: 40% !important;
         margin: 10px !important;
+
+        .item__title {
+          font-size: 13px !important;
+
+          .section__articles--arrow {
+            margin-left: 6px !important;
+          }
+        }
       }
     }
   }
@@ -1002,7 +1031,6 @@ body {
 
   .section__joinUs {
     margin-top: 0 !important;
-    // height: 80vh;
 
     .container {
       padding: 0 10px !important;
@@ -1015,7 +1043,6 @@ body {
           width: 100% !important;
 
           .form__footer {
-
             margin-top: 30px !important;
 
             .footer__subtitle {
@@ -1073,4 +1100,101 @@ body {
     }
   }
 
+}
+
+
+@media (max-width: 389px) {
+  .container {
+    max-width: 280px !important;
+  }
+
+  .nav {
+    display: inline-block !important;
+
+    .nav__logo {
+      text-align: center !important;
+      align-items: center !important;
+      margin: 10px auto !important;
+    }
+
+    .nav__links {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .nav__link {
+        font-size: 14px !important;
+      }
+
+      .nav__item {
+        width: 30% !important;
+        margin-top: 10px !important;
+      }
+
+    }
+  }
+
+  .header__form {
+    top: 30% !important;
+
+    .form__container {
+      .form__search {
+        flex-direction: column !important;
+
+        .search--input {
+          margin-bottom: 10px !important;
+          width: 100% !important;
+
+          &::placeholder {
+            font-size: 12px !important;
+          }
+        }
+
+        .search--btn {
+          width: 15% !important;
+          width: 100% !important;
+        }
+      }
+
+      .tag {
+        display: none !important;
+        // margin: 8px 10px 0 0 !important;
+      }
+    }
+  }
+
+  .section__sponsors {
+    .container {
+
+      .section__sponsors--content {
+        justify-content: center !important; // 
+        align-items: center !important; // 
+        margin: 60px auto !important;
+
+        div {
+          width: auto !important;
+          height: 40px !important;
+
+          img {
+            width: auto !important;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .section__joinUs {
+    height: 80vh;
+
+    .joinUs__form {
+      width: 100% !important;
+
+      .form__header {
+        .joinUs__btn {
+          width: 110% !important;
+        }
+      }
+    }
+  }
 }

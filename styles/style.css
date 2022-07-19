@@ -156,7 +156,11 @@ body {
         width: 1170px;
         margin: 60px 0 100px 0; }
         body .section__sponsors .container .section__sponsors--content div {
-          width: 25%; }
+          width: 15%;
+          display: flex;
+          align-items: center; }
+          body .section__sponsors .container .section__sponsors--content div img {
+            width: 100%; }
   body .section__jobs .container {
     width: 1170px;
     margin: 0 auto; }
@@ -183,7 +187,7 @@ body {
           body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--img {
             text-align: center;
             margin: auto;
-            width: 20%; }
+            width: auto; }
           body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container {
             width: 80%;
             display: flex;
@@ -496,13 +500,13 @@ body {
     .container .nav__item {
       margin-left: 5px; }
       .container .nav__item .nav__link {
-        font-size: 13px !important; }
+        font-size: 16px !important; }
       .container .nav__item .nav__link--btn {
-        padding: 7px 6px !important; }
+        padding: 10px 15px !important; }
     .container .header__form {
       padding: 30px 0 !important; }
       .container .header__form .form__title {
-        font-size: 30px !important; }
+        font-size: 25px !important; }
       .container .header__form .form__container {
         width: 90% !important;
         margin: 10px auto !important; }
@@ -542,7 +546,7 @@ body {
         margin-right: 0px !important; } }
 @media (max-width: 767px) {
   .container {
-    max-width: 360px !important; }
+    max-width: 390px !important; }
 
   .nav {
     display: inline-block !important; }
@@ -575,9 +579,14 @@ body {
 
   .section__sponsors .container .section__sponsors--content {
     justify-content: center !important;
+    align-items: center !important;
     margin: 60px auto !important; }
     .section__sponsors .container .section__sponsors--content div {
-      width: 50% !important; }
+      width: auto !important;
+      height: 60px !important; }
+      .section__sponsors .container .section__sponsors--content div img {
+        width: auto !important;
+        height: 100% !important; }
 
   .section__jobs .container .jobs--item {
     width: 90%; }
@@ -592,6 +601,11 @@ body {
         .section__jobs .container .jobs--item .item__header .item__header--container .item__header--title {
           width: 100% !important;
           margin-bottom: 10px !important; }
+        .section__jobs .container .jobs--item .item__header .item__header--container .item__header--details {
+          display: block !important; }
+          .section__jobs .container .jobs--item .item__header .item__header--container .item__header--details p {
+            margin-top: 10px;
+            text-align: center; }
 
   .section__articles .container .section__articles--content {
     flex-direction: column !important; }
@@ -605,6 +619,10 @@ body {
     .section__allJobs .allJobs__content .allJobs__item {
       flex: 40% !important;
       margin: 10px !important; }
+      .section__allJobs .allJobs__content .allJobs__item .item__title {
+        font-size: 13px !important; }
+        .section__allJobs .allJobs__content .allJobs__item .item__title .section__articles--arrow {
+          margin-left: 6px !important; }
 
   .section__subscribe .container .subscribe__form {
     padding: 20px;
@@ -653,3 +671,55 @@ body {
       align-items: center !important; }
       .footer .container .footer__nav .footer__link {
         margin-right: 0px !important; } }
+@media (max-width: 389px) {
+  .container {
+    max-width: 280px !important; }
+
+  .nav {
+    display: inline-block !important; }
+    .nav .nav__logo {
+      text-align: center !important;
+      align-items: center !important;
+      margin: 10px auto !important; }
+    .nav .nav__links {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important; }
+      .nav .nav__links .nav__link {
+        font-size: 14px !important; }
+      .nav .nav__links .nav__item {
+        width: 30% !important;
+        margin-top: 10px !important; }
+
+  .header__form {
+    top: 30% !important; }
+    .header__form .form__container .form__search {
+      flex-direction: column !important; }
+      .header__form .form__container .form__search .search--input {
+        margin-bottom: 10px !important;
+        width: 100% !important; }
+        .header__form .form__container .form__search .search--input::placeholder {
+          font-size: 12px !important; }
+      .header__form .form__container .form__search .search--btn {
+        width: 15% !important;
+        width: 100% !important; }
+    .header__form .form__container .tag {
+      display: none !important; }
+
+  .section__sponsors .container .section__sponsors--content {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 60px auto !important; }
+    .section__sponsors .container .section__sponsors--content div {
+      width: auto !important;
+      height: 40px !important; }
+      .section__sponsors .container .section__sponsors--content div img {
+        width: auto !important;
+        height: 100% !important; }
+
+  .section__joinUs {
+    height: 80vh; }
+    .section__joinUs .joinUs__form {
+      width: 100% !important; }
+      .section__joinUs .joinUs__form .form__header .joinUs__btn {
+        width: 110% !important; } }
