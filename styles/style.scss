@@ -98,6 +98,7 @@ body {
 
             .nav__link {
               font-size: 15px;
+              text-align: center;
 
               &:link,
               &:visited {
@@ -109,6 +110,7 @@ body {
             }
 
             .nav__link--btn {
+              text-align: center;
 
               &:link,
               &:visited {
@@ -507,18 +509,17 @@ body {
     background-repeat: no-repeat;
 
     .container {
-      width: 100%;
+      width: 1170px;
       height: 300px;
       margin: 0 auto;
+
       display: flex;
       justify-content: center;
       align-items: center;
 
       .subscribe__form {
-        width: 1170px;
+        width: 95%;
         height: 157px;
-        left: 215px;
-        top: 72px;
         background: rgba(233, 233, 233, 0.6);
         border-radius: 20px;
         display: flex;
@@ -546,6 +547,7 @@ body {
 
   .section__joinUs {
     .container {
+      max-width: 1170px;
       margin: 0 auto;
 
       .joinUs__container {
@@ -563,7 +565,7 @@ body {
           text-align: center;
 
           .form__header {
-            width: 404px;
+            width: 70%;
 
             .header__title {
               font-weight: 500;
@@ -588,9 +590,9 @@ body {
             .footer__subtitle {
               font-weight: 500;
               font-size: 18px;
-              line-height: 21px;
+              line-height: 10px;
               margin-top: 9px;
-              height: 30px;
+              height: 23px;
               border-bottom: 1px solid $color-primary;
             }
           }
@@ -641,6 +643,7 @@ body {
     .container {
       margin: 0 auto;
       display: flex;
+      max-width: 1170px;
       justify-content: space-between;
 
       .container__column {
@@ -718,11 +721,7 @@ body {
 
 ////////////////////////////////////////////////
 
-// @media (max-width: 1600px) {
-//   .container {
-//     max-width: 1120px !important;
-//   }
-// }
+
 
 @media (max-width: 1219px) {
   .container {
@@ -816,6 +815,7 @@ body {
       width: 80% !important;
       flex-wrap: wrap !important;
       align-items: center !important;
+      justify-content: center !important;
     }
 
     .section__jobs--content {
@@ -837,44 +837,173 @@ body {
       }
     }
   }
+
+  .footer {
+    .container {
+      flex-direction: column !important;
+      align-items: center !important;
+
+      .footer__logo,
+      .footer__copyright,
+      .footer__follow {
+        margin: 10px auto !important;
+      }
+
+      .footer__nav {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .footer__link {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 400px !important;
+    max-width: 360px !important;
   }
 
   .nav {
-    display: block !important;
+    display: inline-block !important;
 
     .nav__logo {
-      display: block !important;
-      margin: 0 auto !important;
+      text-align: center !important;
+      align-items: center !important;
+      margin: 10px auto !important;
+    }
+
+    .nav__links {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .nav__item {
+        width: 25% !important;
+        margin-top: 10px !important;
+      }
+
     }
   }
 
+  .header__form {
+    top: 22% !important;
 
+    .form__container {
+      .form__search {
+        flex-direction: column !important;
 
-  .form__container {
-    .form__search {
-      .search--input {
-        display: block !important;
-        width: 40% !important;
+        .search--input {
+          margin-bottom: 10px !important;
+          width: 100% !important;
 
-        &::placeholder {
-          font-size: 12px !important;
+          &::placeholder {
+            font-size: 12px !important;
+          }
+        }
+
+        .search--btn {
+          width: 15% !important;
+          width: 100% !important;
         }
       }
 
-      .search--btn {
-        width: 15% !important;
+      .tag {
+        margin: 8px 10px 0 0 !important;
       }
     }
   }
 
+  .section__sponsors {
+    .container {
 
+      .section__sponsors--content {
+        justify-content: center !important; // a
+        margin: 60px auto !important;
+
+        div {
+          width: 50% !important;
+        }
+      }
+    }
+  }
+
+  .section__jobs {
+    .container {
+      // max-width: 390px !important;
+
+      .jobs--item {
+        width: 90%;
+
+        .item__header {
+          flex-direction: column !important;
+
+          .item__header--container {
+            width: 100% !important;
+            margin: 10px auto !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+
+            .item__header--title {
+              width: 100% !important;
+              margin-bottom: 10px !important;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .section__articles {
+    .container {
+      .section__articles--content {
+        flex-direction: column !important;
+
+        .article {
+          width: 80% !important;
+          margin: 0 auto !important;
+        }
+      }
+    }
+  }
+
+  .section__allJobs {
+    .allJobs__content {
+      align-items: center !important;
+      justify-content: center !important;
+
+      .allJobs__item {
+        flex: 40% !important;
+        margin: 10px !important;
+      }
+    }
+  }
+
+  .section__subscribe {
+
+    .container {
+      .subscribe__form {
+        padding: 20px;
+        width: 90% !important;
+        height: auto !important;
+        flex-direction: column !important;
+
+        .subscribe__input {
+          margin: 10px 0;
+          width: 100% !important;
+        }
+      }
+    }
+  }
 
   .section__joinUs {
+    margin-top: 0 !important;
+    // height: 80vh;
+
     .container {
       padding: 0 10px !important;
 
@@ -882,12 +1011,29 @@ body {
         flex-direction: column !important;
         align-items: center !important;
 
-        .joinUs__content {
-          margin-top: 60px !important;
+        .joinUs__form {
+          width: 100% !important;
 
-          .footer__subtitle {
-            height: auto !important;
+          .form__footer {
+
+            margin-top: 30px !important;
+
+            .footer__subtitle {
+              line-height: 40px !important;
+              text-decoration: underline;
+              border: none !important;
+            }
           }
+        }
+
+        .joinUs__content {
+          margin: 60px auto !important;
+          width: 90% !important;
+
+          .joinUs__item {
+            margin-top: 20px;
+          }
+
         }
 
       }
