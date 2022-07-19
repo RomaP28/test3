@@ -47,8 +47,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   background-color: #FFFFFF; }
   body .header {
-    margin: 0 auto;
-    max-width: 1170px;
+    width: 100%;
     height: 100vh;
     background-image: url(../img/header/businessman-working-on-laptop.png), url(../img/header/ellipse.png);
     background-position: left bottom, right center;
