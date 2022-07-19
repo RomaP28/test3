@@ -72,6 +72,7 @@ body {
     position: relative;
 
     .container {
+      width: 1120px;
       margin: 0 auto;
 
       .nav {
@@ -545,7 +546,6 @@ body {
 
   .section__joinUs {
     .container {
-      width: 1170px;
       margin: 0 auto;
 
       .joinUs__container {
@@ -568,7 +568,6 @@ body {
             .header__title {
               font-weight: 500;
               font-size: 18px;
-              line-height: 21px;
             }
 
             .joinUs__btn {
@@ -640,7 +639,6 @@ body {
     padding: 100px 0;
 
     .container {
-      width: 1170px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -720,11 +718,11 @@ body {
 
 ////////////////////////////////////////////////
 
-@media (max-width: 1600px) {
-  .container {
-    max-width: 1120px !important;
-  }
-}
+// @media (max-width: 1600px) {
+//   .container {
+//     max-width: 1120px !important;
+//   }
+// }
 
 @media (max-width: 1219px) {
   .container {
@@ -842,13 +840,89 @@ body {
 }
 
 @media (max-width: 767px) {
-  .header {
-    .container {
-      width: 100% !important;
-      height: 100% !important;
+  .container {
+    max-width: 400px !important;
+  }
 
-      .nav {
-        justify-content: center !important;
+  .nav {
+    display: block !important;
+
+    .nav__logo {
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  }
+
+
+
+  .form__container {
+    .form__search {
+      .search--input {
+        display: block !important;
+        width: 40% !important;
+
+        &::placeholder {
+          font-size: 12px !important;
+        }
+      }
+
+      .search--btn {
+        width: 15% !important;
+      }
+    }
+  }
+
+
+
+  .section__joinUs {
+    .container {
+      padding: 0 10px !important;
+
+      .joinUs__container {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .joinUs__content {
+          margin-top: 60px !important;
+
+          .footer__subtitle {
+            height: auto !important;
+          }
+        }
+
+      }
+    }
+  }
+
+  .section__download {
+    .container {
+      flex-direction: column !important;
+
+      .container__column {
+        margin-top: 20px !important;
+      }
+    }
+  }
+
+  .footer {
+
+    .container {
+      flex-direction: column !important;
+      align-items: center !important;
+
+      .footer__logo,
+      .footer__copyright,
+      .footer__follow {
+        margin: 10px auto !important;
+      }
+
+      .footer__nav {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .footer__link {
+          margin-right: 0px !important;
+        }
       }
     }
   }
