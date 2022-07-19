@@ -49,7 +49,7 @@ body {
   body .header {
     width: 100%;
     height: 100vh;
-    background-image: url("img/header/businessman-working-on-laptop.png"), url("img/header/ellipse.png");
+    background-image: url(img/header/businessman-working-on-laptop.png), url(img/header/ellipse.png);
     background-position: left bottom, right center;
     background-repeat: no-repeat;
     position: relative; }
@@ -205,9 +205,9 @@ body {
               margin-top: 1px;
               width: 16px;
               height: 16px;
-              background-image: url(/img/jobs/star-white.png); }
+              background-image: url(img/jobs/star-white.png); }
               body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star:hover {
-                background-image: url(/img/jobs/star.png); }
+                background-image: url(img/jobs/star.png); }
           body .section__jobs .section__jobs--content .jobs--item .item__header .item__header--container .item__header--details {
             margin-top: 5px;
             width: 100%;
