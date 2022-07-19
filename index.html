@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jobpoint</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/nullstyle.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,19 +17,21 @@
   <div class="wrapper">
     <header class="header">
       <nav class="nav">
-        <h1><a href="/"><img src="img/logo.png" alt="Jobpoint logo" class="nav__logo">Jobpoint</a></h1>
+        <h1 class="nav__logo"><a href="/"><img src="img/header/logo.png" class="logo--img"
+              alt="Jobpoint logo">Jobpoint</a>
+        </h1>
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__link" href="#section--1">Job Seekers</a>
+            <a class="nav__link" href="#">Job Seekers</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--2">Employers</a>
+            <a class="nav__link" href="#">Employers</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--3">Sign In</a>
+            <a class="nav__link" href="#">Sign In</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--3">Register</a>
+            <a class="nav__link" href="#">Register</a>
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--btn btn--show-modal" href="#">Post a job</a>
@@ -41,28 +44,28 @@
           <div class="header__form--search">
             <input class="search--input" type="text" placeholder="By job title, keyword or company">
             <input class="search--input" type="text" placeholder="By location">
-            <button class="search--btn">Job search <img src="img/arrow.png" alt="symbol"
-                class="search--btn--symbol"></button>
+            <button class="search--btn">Job search <img src="img/header/arrow.png" alt="symbol"
+                class="btn--symbol"></button>
           </div>
           <div class="header__form--tags">
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">programming</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">tech</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">webdesign</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">developer</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">remote</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">javascript</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">front</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">devops</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">manager</p>
-            <p class="tag"><img src="img/search.png" alt="symbol" class="tag--search">wordpress</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">programming</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">tech</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">webdesign</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">developer</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">remote</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">javascript</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">front</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">devops</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">manager</p>
+            <p class="tag"><img src="img/header/search.png" alt="symbol" class="tag--search">wordpress</p>
           </div>
         </div>
       </div>
 
     </header>
 
-    <section class="section__sponsors">
-      <h2 class="section__title">Top hiring companies</h2>
+    <section class="section section__sponsors">
+      <h2>Top hiring companies</h2>
       <div class="section__sponsors--content">
         <img src="./img/sponsors/sponsors1.png" alt="sponsors">
         <img src="./img/sponsors/sponsors2.png" alt="sponsors">
@@ -89,10 +92,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -115,10 +118,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -141,10 +144,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -167,10 +170,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -193,10 +196,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -219,10 +222,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -245,10 +248,10 @@
                 <p>Featured</p>
                 <div class="item__header--star"></div>
               </div>
-              <div class="item__header--links">
-                <p><img src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
-                <p><img src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
-                <p><img src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
+              <div class="item__header--details">
+                <p><img class="detail__img" src="./img/jobs/links/clocks.png" alt="links">12 hours ago</p>
+                <p><img class="detail__img" src="./img/jobs/links/navigation.png" alt="links">Salem, MA</p>
+                <p><img class="detail__img" src="./img/jobs/links/money.png" alt="links">75,000 - 120,000</p>
               </div>
             </div>
           </header>
@@ -263,7 +266,6 @@
         </div>
       </div>
     </section>
-
 
     <section class="section section__articles">
       <h2 class="section__title">Useful tricks and articles</h2>
@@ -296,114 +298,235 @@
           </div>
         </div>
       </div>
-      <button class="search--btn">Read all <img src="img/arrow.png" alt="symbol" class="search--btn--symbol"></button>
+      <button class="articles--btn">Read all <img src="img/header/arrow.png" alt="symbol" class="btn--symbol"></button>
     </section>
-
 
     <section class="section section__allJobs">
       <h2 class="section__title">All jobs</h2>
       <div class="allJobs__container">
         <div class="allJobs__tab-container">
-          <p class="allJobs__tab allJobs__tab--active">Category</p>
-          <p class="allJobs__tab operations__tab--2">Location</p>
+          <p class="allJobs__tab tab--active">Category</p>
+          <p class="allJobs__tab">Location</p>
         </div>
         <div class="allJobs__content">
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Back-end</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>53 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Mobile apps</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>230 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Full-stack</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>110 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>UI/UX</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>250 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Front-end</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>5120 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Webdesign</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>535 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Data bases</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>9 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>AWS</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>23 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Angular</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>12 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>Wordpress</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>50 jobs</p>
           </div>
           <div class="allJobs__item">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>QA</h3>
               <img class="section__articles--arrow" src="./img/articles/arrow.png"></a></p>
             </div>
             <p>15 jobs</p>
           </div>
           <div class="allJobs__item allJobs__item--viewall">
-            <div class="allJobs__item--title">
+            <div class="item__title">
               <h3>All</h3>
             </div>
             <p>12345 jobs</p>
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="section section__subscribe">
-      <div class="subscribe__background">
-
+      <div class="subscribe__form">
+        <h5 class="subscribe__title">Subscribe and get all latest jobs and updates</h5>
+        <input class="subscribe__input" type="text" placeholder="Your E-mail">
+        <button class="subscribe__btn">Subscribe</button>
       </div>
     </section>
   </div>
 
+  <section class="section section__joinUs">
+    <h2 class="section__title">Why use Jobpoint</h2>
+    <div class="joinUs__container">
+      <div class="joinUs__form">
+        <div class="form__header">
+          <h5 class="header__title">Join the leading technology career website to secure your next job!</h5>
+          <button class="joinUs__btn">Create you profile now <img src="img/header/arrow.png" alt="symbol"
+              class="btn--symbol"></button>
+        </div>
+        <div class="form__footer">
+          <p class="footer__question">Recruiting for top talent?</p>
+          <h5 class="footer__subtitle">Explore our bespoke recruitment solutions</h5>
+        </div>
+      </div>
+      <div class="joinUs__content">
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/tropical.svg" alt="img">
+          </div>
+          <p>Topical jobs</p>
+        </div>
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/group.svg" alt="img">
+          </div>
+          <p>Verified candidates</p>
+        </div>
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/dollar.svg" alt="img">
+          </div>
+          <p>Free for candidates</p>
+        </div>
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/carbon_spell-check.svg" alt="img">
+          </div>
+          <p>Verified companies</p>
+        </div>
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/support.svg" alt="img">
+          </div>
+          <p>Fast support</p>
+        </div>
+        <div class="joinUs__item">
+          <div class="item__img">
+            <img src="./img/joinus/market.svg" alt="img">
+          </div>
+          <p>Years on the market</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <section class="section section__download">
+    <div class="download__container">
+      <div class="container__column">
+        <h5>Download our apps:</h5>
+        <a href="#"><img src="./img/apps/appstore.svg" alt="appstore"></a>
+        <a href="#"><img src="./img/apps/playmarket.svg" alt="playmarket"></a>
+      </div>
+      <div class="container__column">
+        <h5>Job seekers</h5>
+        <p><a href="#">Add your resume</a></p>
+        <p><a href="#">Search jobs</a></p>
+        <p><a href="#">News and tips</a></p>
+        <p><a href="#">Browse companies</a></p>
+        <p><a href="#">Create a job alert</a></p>
+        <p><a href="#">Account</a></p>
+        <p><a href="#">FAQ</a></p>
+      </div>
+      <div class="container__column">
+        <h5>Employees</h5>
+        <p><a href="#">Post a job</a></p>
+        <p><a href="#">Job templates</a></p>
+        <p><a href="#">Hiring guide</a></p>
+        <p><a href="#">Pricing</a></p>
+        <p><a href="#">Browse resumes</a></p>
+        <p><a href="#">Account</a></p>
+        <p><a href="#">FAQ</a></p>
+      </div>
+      <div class="container__column">
+        <h5>Contacts:</h5>
+        <p class="column__subtitle">Address:</p>
+        <p>108 Wild Basin Road Suite 250, Austin, TX 78746</p>
+        <p class="column__subtitle">Phone:</p>
+        <p>1-787-213-8787</p>
+        <p>1-262-341-8787</p>
+        <p class="column__subtitle">E-mail:</p>
+        <p>contact@jobpoint.io</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h1 class="footer__logo"><a href="/"><img src="img/header/logo.png" class="logo--img"
+          alt="Jobpoint logo">Jobpoint</a></h1>
+    <p class="footer__copyright">Copyright © 2025 </p>
+    <div class="footer__follow">
+      <p>Follow us: </p>
+      <a class="follow__link" href="#"><img src="./img/footer/linkedin.svg" alt="linkedin"></a>
+      <a class="follow__link" href="#"><img src="./img/footer/facebook.svg" alt="facebook"></a>
+      <a class="follow__link" href="#"><img src="./img/footer/youtube.svg" alt="youtube"></a>
+      <a class="follow__link" href="#"><img src="./img/footer/instagram.svg" alt="instagram"></a>
+    </div>
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#">Privacy policy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Terms and conditions</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Cookie policy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">GDPR</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
