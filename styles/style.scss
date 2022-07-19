@@ -68,9 +68,10 @@ body {
   background-color: #FFFFFF;
 
   .header {
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
     height: 100vh;
-    background-image: url(img/header/businessman-working-on-laptop.png), url(img/header/ellipse.png);
+    background-image: url(../img/header/businessman-working-on-laptop.png), url(../img/header/ellipse.png);
     background-position: left bottom, right center;
     background-repeat: no-repeat;
     position: relative;
@@ -306,10 +307,10 @@ body {
                 margin-top: 1px;
                 width: 16px;
                 height: 16px;
-                background-image: url(img/jobs/star-white.png);
+                background-image: url(../img/jobs/star-white.png);
 
                 &:hover {
-                  background-image: url(img/jobs/star.png);
+                  background-image: url(../img/jobs/star.png);
                 }
               }
             }
@@ -489,7 +490,7 @@ body {
     width: 100%;
     height: 300px;
     background-color: rgba(121, 77, 239, 0.2);
-    background-image: url(img/subscribe/ellipse.png), url(img/subscribe/subscribe.png);
+    background-image: url(../img/subscribe/ellipse.png), url(../img/subscribe/subscribe.png);
     background-position: left center, right bottom;
     background-repeat: no-repeat;
     display: flex;
