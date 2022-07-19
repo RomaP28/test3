@@ -122,7 +122,6 @@ body {
 
               &:hover,
               &:active {
-                color: inherit;
                 background-color: $color-primary;
                 color: white;
               }
@@ -175,18 +174,17 @@ body {
 
             .tag {
               margin: 16px 19px 0 0;
-              vertical-align: middle;
               color: white;
               font-size: 15px;
               cursor: pointer;
-              padding: 6px 8px;
+              padding: 5px 8px;
               height: 30px;
               background: $color-tertiary;
               border: 1px solid #FFFFFF;
               border-radius: 50px;
 
               .tag--search {
-                margin-right: 6px;
+                margin: 2px 4px;
               }
             }
           }
@@ -776,10 +774,10 @@ body {
     margin: 0 auto !important;
 
     .nav__item {
-      margin-left: 5px;
+      margin-left: 5px !important;
 
       .nav__link {
-        font-size: 16px !important;
+        font-size: 15px !important;
       }
 
       .nav__link--btn {
@@ -869,6 +867,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header {
+    background-position: right bottom, right center !important;
+    background-size: 120%, 30%;
+  }
+
   .container {
     max-width: 390px !important;
   }
@@ -918,7 +921,12 @@ body {
       }
 
       .tag {
-        margin: 8px 10px 0 0 !important;
+        font-size: 18px !important;
+        padding: 2px 4px !important;
+
+        .tag--search {
+          margin: 6px 4px !important
+        }
       }
     }
   }
@@ -987,6 +995,10 @@ body {
         .article {
           width: 80% !important;
           margin: 0 auto !important;
+
+          .article--title {
+            width: 80% !important;
+          }
         }
       }
     }
@@ -1013,6 +1025,7 @@ body {
   }
 
   .section__subscribe {
+    background-size: 25%, 120% !important; // 
 
     .container {
       .subscribe__form {

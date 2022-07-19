@@ -82,7 +82,6 @@ body {
                 border: 1px solid #026EDE;
                 color: #026EDE; }
               body .header .container .nav .nav__links .nav__item .nav__link--btn:hover, body .header .container .nav .nav__links .nav__item .nav__link--btn:active {
-                color: inherit;
                 background-color: #026EDE;
                 color: white; }
       body .header .container .header__form {
@@ -114,17 +113,16 @@ body {
             flex-wrap: wrap; }
             body .header .container .header__form .form__container .header__form--tags .tag {
               margin: 16px 19px 0 0;
-              vertical-align: middle;
               color: white;
               font-size: 15px;
               cursor: pointer;
-              padding: 6px 8px;
+              padding: 5px 8px;
               height: 30px;
               background: rgba(121, 77, 239, 0.2);
               border: 1px solid #FFFFFF;
               border-radius: 50px; }
               body .header .container .header__form .form__container .header__form--tags .tag .tag--search {
-                margin-right: 6px; }
+                margin: 2px 4px; }
   body .section {
     width: 100%;
     margin-top: 100px; }
@@ -498,9 +496,9 @@ body {
     max-width: 780px !important;
     margin: 0 auto !important; }
     .container .nav__item {
-      margin-left: 5px; }
+      margin-left: 5px !important; }
       .container .nav__item .nav__link {
-        font-size: 16px !important; }
+        font-size: 15px !important; }
       .container .nav__item .nav__link--btn {
         padding: 10px 15px !important; }
     .container .header__form {
@@ -545,6 +543,10 @@ body {
       .footer .container .footer__nav .footer__link {
         margin-right: 0px !important; } }
 @media (max-width: 767px) {
+  .header {
+    background-position: right bottom, right center !important;
+    background-size: 120%, 30%; }
+
   .container {
     max-width: 390px !important; }
 
@@ -575,7 +577,10 @@ body {
         width: 15% !important;
         width: 100% !important; }
     .header__form .form__container .tag {
-      margin: 8px 10px 0 0 !important; }
+      font-size: 18px !important;
+      padding: 2px 4px !important; }
+      .header__form .form__container .tag .tag--search {
+        margin: 6px 4px !important; }
 
   .section__sponsors .container .section__sponsors--content {
     justify-content: center !important;
@@ -612,6 +617,8 @@ body {
     .section__articles .container .section__articles--content .article {
       width: 80% !important;
       margin: 0 auto !important; }
+      .section__articles .container .section__articles--content .article .article--title {
+        width: 80% !important; }
 
   .section__allJobs .allJobs__content {
     align-items: center !important;
@@ -624,14 +631,16 @@ body {
         .section__allJobs .allJobs__content .allJobs__item .item__title .section__articles--arrow {
           margin-left: 6px !important; }
 
-  .section__subscribe .container .subscribe__form {
-    padding: 20px;
-    width: 90% !important;
-    height: auto !important;
-    flex-direction: column !important; }
-    .section__subscribe .container .subscribe__form .subscribe__input {
-      margin: 10px 0;
-      width: 100% !important; }
+  .section__subscribe {
+    background-size: 25%, 120% !important; }
+    .section__subscribe .container .subscribe__form {
+      padding: 20px;
+      width: 90% !important;
+      height: auto !important;
+      flex-direction: column !important; }
+      .section__subscribe .container .subscribe__form .subscribe__input {
+        margin: 10px 0;
+        width: 100% !important; }
 
   .section__joinUs {
     margin-top: 0 !important; }
