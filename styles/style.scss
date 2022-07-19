@@ -143,8 +143,9 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      width: 1033px;
-      height: 304px;
+      width: 80%;
+      // height: auto;
+      padding: 30px 0;
       top: 38%;
       left: 50%;
       background: rgba(233, 233, 233, 0.6);
@@ -160,7 +161,7 @@ body {
 
       .header__container {
         width: 70%;
-        margin: 0 auto;
+        margin: 36px auto;
 
         .search--input {
           @extend %input;
@@ -527,7 +528,7 @@ body {
   .section__joinUs {
 
     .joinUs__container {
-      width: 1120px;
+      width: 1170px;
       margin: 0 auto;
       height: 400px;
       display: flex;
@@ -619,7 +620,7 @@ body {
     padding: 100px 0;
 
     .download__container {
-      width: 1120px;
+      width: 1170px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -654,7 +655,7 @@ body {
   }
 
   .footer {
-    width: 1120px;
+    width: 1170px;
     margin: 0 auto;
     padding: 38px 0;
     display: flex;
