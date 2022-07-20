@@ -234,7 +234,6 @@ body {
           font-weight: 400;
           font-size: 15px; }
       body .section__jobs .container .section__jobs--content .jobs--viewAll {
-        color: white;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -243,6 +242,10 @@ body {
         body .section__jobs .container .section__jobs--content .jobs--viewAll p {
           cursor: pointer;
           font-size: 15px; }
+          body .section__jobs .container .section__jobs--content .jobs--viewAll p a {
+            color: white; }
+            body .section__jobs .container .section__jobs--content .jobs--viewAll p a:visited {
+              color: white; }
   body .section__articles .container {
     width: 1170px;
     margin: 0 auto;

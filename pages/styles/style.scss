@@ -1,0 +1,542 @@
+$color-primary: #026EDE;
+$color-secondary: #794DEF;
+$color-tertiary: rgba(121, 77, 239, 0.2);
+$color-placeholder: #D0D0D0;
+$color-highlight: #02D4DE;
+$color-shadow: rgba(2, 126, 232, 0.15);
+
+%logo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+
+  a:visited {
+    color: #000;
+  }
+
+  a:active {
+    color: #000;
+  }
+
+  .logo--img {
+    margin-right: 10px;
+    height: 22px;
+    width: 26px;
+    vertical-align: text-bottom;
+  }
+}
+
+%btn {
+  color: #FFFFFF;
+  font-size: 15px;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid $color-secondary;
+  background: $color-secondary;
+  box-shadow: 0px 0px 15px rgba(151, 116, 244, 0.5);
+
+  .btn--symbol {
+    margin-left: 12px;
+  }
+}
+
+%input {
+  width: 38%;
+  height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px $color-shadow;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: $color-placeholder;
+    font-size: 15px;
+  }
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #FFFFFF;
+
+  .header {
+
+    .container {
+      width: 1120px;
+      margin: 0 auto;
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        z-index: 100;
+
+        .nav__logo {
+          @extend %logo;
+        }
+
+        .nav__links {
+          display: flex;
+          align-items: center;
+          list-style: none;
+
+          .nav__item {
+            cursor: pointer;
+            margin-left: 32px;
+
+            .nav__link {
+              font-size: 15px;
+              text-align: center;
+
+              &:link,
+              &:visited {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                transition: all 0.3s;
+              }
+            }
+
+            .nav__link--btn {
+              text-align: center;
+
+              &:link,
+              &:visited {
+                padding: 14px 30px;
+                border-radius: 3rem;
+                border: 1px solid $color-primary;
+                color: $color-primary;
+              }
+
+              &:hover,
+              &:active {
+                background-color: $color-primary;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bar__right-side {
+          display: flex;
+          width: 23%;
+          justify-content: space-around;
+          align-items: center;
+
+          .bar__btn {
+            @extend %btn
+          }
+        }
+      }
+
+      .jobs--item {
+
+        .item__header {
+          .item__header--img {
+            text-align: center;
+          }
+
+          .item__header--title {
+            padding: 10px;
+            font-weight: 700;
+            font-size: 22px;
+          }
+
+          .item__header--container {
+            text-align: center;
+
+            .item__featured {
+              display: flex;
+              min-width: 250px;
+              width: 20%;
+              margin: 5px auto;
+              justify-content: space-between;
+
+              img {
+                width: 18px;
+              }
+            }
+
+            .item__header--details {
+
+              color: #BDBDBD;
+              margin: 0 auto;
+              width: 40%;
+              display: flex;
+              justify-content: space-around;
+
+              .detail__img {
+                margin-right: 15px;
+                vertical-align: text-bottom;
+              }
+            }
+          }
+
+          h3 {
+            padding: 10px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 25px;
+          }
+        }
+
+        .item__body {
+          .item__title {
+            padding: 10px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+          }
+
+          .item__container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+
+            .container__column {
+              width: 48%;
+
+              p {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .section {
+    width: 100%;
+    margin-top: 100px;
+
+    .section__title {
+      text-align: center;
+      margin: 100px auto 60px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .section__download {
+    background-color: $color-primary;
+    padding: 100px 0;
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      max-width: 1170px;
+      justify-content: space-between;
+
+      .container__column {
+        text-align: center;
+        color: #FFF;
+
+        h5 {
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 25px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          margin-bottom: 15px;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        .column__subtitle {
+          display: inline-block;
+          height: 20px;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 38px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: middle;
+
+      .footer__logo {
+        @extend %logo;
+      }
+
+      .footer__follow {
+        display: flex;
+        align-items: center;
+
+        .follow__link,
+        p {
+          margin-right: 10px;
+        }
+      }
+
+      .footer__nav {
+        list-style: none;
+        display: flex;
+
+        .footer__item {
+          .footer__link {
+            margin-right: 33px;
+            vertical-align: middle;
+            font-weight: 400;
+            font-size: 15px;
+            color: black;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////
+
+@media (max-width: 1219px) {
+  .container {
+    max-width: 970px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 780px !important;
+    margin: 0 auto !important;
+
+    .nav__item {
+      margin-left: 5px !important;
+
+      .nav__link {
+        font-size: 15px !important;
+      }
+
+      .nav__link--btn {
+        padding: 10px 15px !important;
+      }
+    }
+
+  }
+
+  .footer {
+    .container {
+      flex-direction: column !important;
+      align-items: center !important;
+
+      .footer__logo,
+      .footer__copyright,
+      .footer__follow {
+        margin: 10px auto !important;
+      }
+
+      .footer__nav {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .footer__link {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-position: right bottom, right center !important;
+    background-size: 120%, 30%;
+  }
+
+  .container {
+    max-width: 390px !important;
+  }
+
+  .nav {
+    display: block !important;
+
+    .nav__logo {
+      text-align: center !important;
+      align-items: center !important;
+      margin: 10px auto !important;
+    }
+
+    .nav__links {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .nav__item {
+        width: 25% !important;
+        margin-top: 10px !important;
+      }
+
+    }
+  }
+
+  .bar {
+
+    margin-top: 10%;
+
+    .back {
+      display: none;
+    }
+
+    .bar__right-side {
+      // border: 1px solid red;
+      margin: 20px auto;
+      width: 90% !important;
+      justify-content: space-between !important;
+      // align-self: center !important;
+
+      .bar__btn {
+        order: 2;
+      }
+
+      .options {
+        order: 1;
+      }
+
+      .favorites {
+        order: 3;
+      }
+    }
+  }
+
+  .jobs--item {
+    .item__header--container {
+      .item__header--title {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+      }
+
+      .item__header--details {
+        width: 100% !important;
+        display: block !important;
+
+        p {
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .item__body {
+      .item__container {
+        margin-top: 30px;
+        flex-direction: column !important;
+
+        .container__column {
+          padding: 0 15px;
+          margin-top: 40px;
+          width: 100% !important;
+          font-size: 20px !important;
+
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .section__download {
+    .container {
+      flex-direction: column !important;
+
+      .container__column {
+        margin-top: 20px !important;
+
+        h5 {
+          font-size: 25px !important;
+        }
+
+        p {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+
+  .footer {
+
+    .container {
+      flex-direction: column !important;
+      align-items: center !important;
+
+      .footer__logo,
+      .footer__copyright,
+      .footer__follow {
+        margin: 10px auto !important;
+      }
+
+      .footer__nav {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .footer__link {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 389px) {
+  .container {
+    max-width: 280px !important;
+  }
+
+  .nav {
+    display: inline-block !important;
+
+    .nav__logo {
+      text-align: center !important;
+      align-items: center !important;
+      margin: 10px auto !important;
+    }
+
+    .nav__links {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .nav__link {
+        font-size: 14px !important;
+      }
+
+      .nav__item {
+        width: 30% !important;
+        margin-top: 10px !important;
+      }
+
+    }
+  }
+}
