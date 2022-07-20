@@ -208,7 +208,7 @@ body {
                 font-size: 12px;
                 background-color: #02D4DE;
                 border-radius: 20px;
-                padding: 4px;
+                padding: 3px;
                 display: inline-block;
                 height: 20px; }
               body .section__jobs .container .section__jobs--content .jobs--item .item__header .item__header--container .item__header--featured .item__header--star {
@@ -402,9 +402,7 @@ body {
           display: flex;
           flex-direction: column;
           text-align: center;
-          justify-content: space-between;
-          width: 74px;
-          height: 74px; }
+          justify-content: space-between; }
           body .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item .item__img {
             width: 50px;
             height: 50px;
@@ -417,7 +415,7 @@ body {
             justify-content: center; }
           body .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item p {
             font-size: 12px;
-            line-height: 14px; }
+            margin: 12px; }
   body .section__download {
     background-color: #026EDE;
     padding: 100px 0; }
@@ -645,10 +643,12 @@ body {
   .section__joinUs {
     margin-top: 0 !important; }
     .section__joinUs .container {
+      height: auto !important;
       padding: 0 10px !important; }
       .section__joinUs .container .joinUs__container {
         flex-direction: column !important;
-        align-items: center !important; }
+        align-items: center !important;
+        height: auto !important; }
         .section__joinUs .container .joinUs__container .joinUs__form {
           width: 100% !important; }
           .section__joinUs .container .joinUs__container .joinUs__form .form__footer {
@@ -660,13 +660,17 @@ body {
         .section__joinUs .container .joinUs__container .joinUs__content {
           margin: 60px auto !important;
           width: 90% !important; }
-          .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item {
-            margin-top: 20px; }
+          .section__joinUs .container .joinUs__container .joinUs__content .joinUs__item p {
+            font-size: 16px !important; }
 
   .section__download .container {
     flex-direction: column !important; }
     .section__download .container .container__column {
       margin-top: 20px !important; }
+      .section__download .container .container__column h5 {
+        font-size: 25px !important; }
+      .section__download .container .container__column p {
+        font-size: 20px !important; }
 
   .footer .container {
     flex-direction: column !important;
@@ -726,9 +730,7 @@ body {
         width: auto !important;
         height: 100% !important; }
 
-  .section__joinUs {
-    height: 80vh; }
-    .section__joinUs .joinUs__form {
-      width: 100% !important; }
-      .section__joinUs .joinUs__form .form__header .joinUs__btn {
-        width: 110% !important; } }
+  .section__joinUs .joinUs__form {
+    width: 100% !important; }
+    .section__joinUs .joinUs__form .form__header .joinUs__btn {
+      width: 110% !important; } }
